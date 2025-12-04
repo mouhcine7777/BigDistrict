@@ -174,11 +174,7 @@ export default function ProjectsSection() {
 
                   {/* Content */}
                   <div className="relative h-full p-6 md:p-8 lg:p-12 flex flex-col items-center justify-center text-center">
-                    <div className="mb-6 md:mb-8">
-                      <div className="w-16 h-16 md:w-24 md:h-24 bg-white/10 rounded-full flex items-center justify-center mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-500">
-                        <ArrowRight className="w-8 h-8 md:w-12 md:h-12 text-white group-hover:translate-x-2 transition-transform duration-300" />
-                      </div>
-                      
+                    <div className="mb-6 md:mb-8">    
                       <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-3 md:mb-4">
                         View All Projects
                       </h3>
