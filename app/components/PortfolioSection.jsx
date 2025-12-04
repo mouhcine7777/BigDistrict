@@ -73,11 +73,6 @@ export default function ProjectsSection() {
 
   return (
     <section className="relative bg-black py-12 md:py-20 lg:py-32 overflow-hidden">
-      {/* Background Effects */}
-      <div className="absolute inset-0 opacity-10 md:opacity-20">
-        <div className="absolute top-0 left-1/4 w-64 h-64 md:w-96 md:h-96 bg-[#ED2410] rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-64 h-64 md:w-96 md:h-96 bg-red-900 rounded-full blur-3xl" />
-      </div>
 
       {/* Grid Pattern */}
       <div className="absolute inset-0 opacity-5">
