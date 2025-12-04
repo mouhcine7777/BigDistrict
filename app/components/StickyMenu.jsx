@@ -17,7 +17,7 @@ export default function CreativeNavbar() {
   }, []);
 
   const navLinks = [
-    { name: 'Work', href: '/work' },
+    { name: 'Work', href: '/portfolio' },
     { name: 'Services', href: '/services' },
     { name: 'About', href: '/about' },
     { name: 'Contact', href: '/contact' }
@@ -63,7 +63,7 @@ export default function CreativeNavbar() {
                 {/* CTA Button */}
                 <Link href="/contact">
                   <button 
-                    className="group relative px-6 py-3 bg-[#ED2410] text-white font-medium rounded-full overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-red-500/50"
+                    className="group relative px-5 py-2 bg-[#ED2410] text-white font-medium uppercase overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-red-500/50"
                     style={{
                       animation: 'fadeInDown 0.6s ease-out 0.4s both'
                     }}
@@ -155,7 +155,7 @@ export default function CreativeNavbar() {
             onClick={() => setIsMobileMenuOpen(false)}
           >
             <button 
-              className="mt-8 px-10 py-4 bg-[#ED2410] text-white font-medium rounded-full hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-red-500/50"
+              className="mt-8 px-5 py-2 bg-[#ED2410] text-white font-medium text-xl uppercase hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-red-500/50"
               style={{
                 animation: isMobileMenuOpen 
                   ? `fadeInUp 0.5s ease-out 0.5s both` 

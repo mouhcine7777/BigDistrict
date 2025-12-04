@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { Award, Users, Lightbulb, TrendingUp } from 'lucide-react';
 
 export default function AboutSection() {
@@ -66,12 +67,11 @@ export default function AboutSection() {
             </p>
 
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 pt-2">
-              <button className="w-full sm:w-auto px-5 md:px-6 lg:px-7 py-2.5 md:py-3 bg-[#ED2410] text-white font-semibold rounded-lg hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-red-500/20 text-sm">
-                Discover More
-              </button>
-              <button className="w-full sm:w-auto px-5 md:px-6 lg:px-7 py-2.5 md:py-3 bg-white text-gray-800 font-semibold rounded-lg border-2 border-gray-200 hover:border-[#ED2410] hover:text-[#ED2410] transition-all duration-300 text-sm">
-                Our Story
-              </button>
+              <Link href="/about">
+                <button className="w-full sm:w-auto px-5 py-2 bg-[#ED2410] text-white font-semibold text-xl uppercase hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-red-500/20">
+                  Discover More
+                </button>
+              </Link>
             </div>
           </div>
 
@@ -86,7 +86,7 @@ export default function AboutSection() {
                   key={index}
                   onMouseEnter={() => setHoveredCard(index)}
                   onMouseLeave={() => setHoveredCard(null)}
-                  className={`group relative rounded-xl md:rounded-2xl p-4 md:p-5 lg:p-6 transition-all duration-500 cursor-pointer ${
+                  className={`group relative p-4 md:p-5 lg:p-6 transition-all duration-500 cursor-pointer ${
                     hoveredCard === index
                       ? 'shadow-2xl scale-105 -translate-y-2'
                       : 'shadow-lg hover:shadow-xl'
@@ -97,7 +97,7 @@ export default function AboutSection() {
                 >
                   {/* Gradient Background */}
                   <div
-                    className={`absolute inset-0 bg-gradient-to-br ${stat.color} rounded-xl md:rounded-2xl transition-opacity duration-500 ${
+                    className={`absolute inset-0 bg-gradient-to-br ${stat.color} transition-opacity duration-500 ${
                       isAlwaysColored 
                         ? 'opacity-100' 
                         : 'opacity-0 group-hover:opacity-100'
@@ -107,7 +107,7 @@ export default function AboutSection() {
                   {/* White background for non-colored cards when not hovered */}
                   {!isAlwaysColored && (
                     <div
-                      className={`absolute inset-0 bg-white rounded-xl md:rounded-2xl transition-opacity duration-500 ${
+                      className={`absolute inset-0 bg-white transition-opacity duration-500 ${
                         hoveredCard === index ? 'opacity-0' : 'opacity-100'
                       }`}
                     />
@@ -115,7 +115,7 @@ export default function AboutSection() {
 
                   {/* Content */}
                   <div className="relative z-10">
-                    <div className={`inline-flex p-2 md:p-3 rounded-lg md:rounded-xl mb-3 md:mb-4 transition-all duration-300 ${
+                    <div className={`inline-flex p-2 md:p-3 mb-3 md:mb-4 transition-all duration-300 ${
                       isAlwaysColored
                         ? hoveredCard === index
                           ? 'bg-white/20'
@@ -161,7 +161,7 @@ export default function AboutSection() {
                   </div>
 
                   {/* Corner Accent */}
-                  <div className={`absolute top-0 right-0 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-[#ED2410] rounded-bl-full opacity-0 group-hover:opacity-10 transition-opacity duration-500`} />
+                  <div className={`absolute top-0 right-0 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-[#ED2410] opacity-0 group-hover:opacity-10 transition-opacity duration-500`} />
                 </div>
               );
             })}

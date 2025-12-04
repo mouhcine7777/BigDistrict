@@ -42,14 +42,14 @@ export default function Footer() {
               href="mailto:contact@bigdistrict.agency"
               className="group relative z-10 inline-flex items-center gap-3 mb-8"
             >
-              <div className="relative z-10 inline-flex items-center gap-4 px-8 py-4 bg-[#ED2410] text-white rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-[#ED2410]/30">
-                <div className="absolute inset-0 bg-gradient-to-r from-[#ED2410] via-red-600 to-[#ED2410] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <Mail className="w-5 h-5 relative z-10" />
-                <span className="font-medium text-lg relative z-10">
-                  Start Your Project
-                </span>
-                <ArrowRight className="w-5 h-5 relative z-10 transform transition-transform duration-300 group-hover:translate-x-1" />
-              </div>
+ <div className="relative z-10 inline-flex items-center gap-4 px-5 py-2 bg-[#ED2410] text-white text-xl uppercase overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-[#ED2410]/30">
+              <div className="absolute inset-0 bg-gradient-to-r from-[#ED2410] via-red-600 to-[#ED2410] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <Mail className="w-5 h-5 relative z-10" />
+              <span className="font-semibold relative z-10">
+                Start Your Project
+              </span>
+              <ArrowRight className="w-5 h-5 relative z-10 transform transition-transform duration-300 group-hover:translate-x-1" />
+            </div>
             </a>
           </div>
         </div>

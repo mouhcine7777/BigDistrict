@@ -104,7 +104,7 @@ export default function HeroSection() {
                 animation: 'fadeInUp 1s ease-out 0.6s both'
               }}
             >
-              <button className="group relative inline-flex items-center gap-3 px-10 py-4 bg-white text-black font-medium rounded-full hover:bg-gray-100 transition-all duration-300 hover:scale-105 overflow-hidden">
+<button className="group relative inline-flex items-center gap-3 px-6 py-2 bg-white text-black font-medium text-xl uppercase hover:bg-gray-100 transition-all duration-300 hover:scale-105 overflow-hidden">
                 <span className="relative z-10">Let's talk</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform relative z-10" />
                 {/* Button shine effect */}
