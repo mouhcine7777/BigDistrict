@@ -41,12 +41,6 @@ export default function AboutSection() {
       <div className="absolute top-10 right-10 w-72 h-72 bg-[#ED2410] rounded-full blur-3xl opacity-5" />
       <div className="absolute bottom-10 left-10 w-72 h-72 bg-black rounded-full blur-3xl opacity-5" />
 
-      {/* Animated Lines */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-1/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#ED2410] to-transparent" />
-        <div className="absolute top-3/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#ED2410] to-transparent" />
-      </div>
-
       <div className="relative w-full h-full max-w-7xl mx-auto px-6 lg:px-8 py-12 flex items-center">
         <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 w-full items-center">
           {/* Left Content */}
